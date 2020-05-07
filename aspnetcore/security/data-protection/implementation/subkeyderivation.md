@@ -4,6 +4,7 @@ author: rick-anderson
 description: Learn implementation details of ASP.NET Core Data Protection subkey derivation and authenticated encryption.
 ms.author: riande
 ms.date: 10/14/2016
+no-loc: [Blazor, "Identity", "Let's Encrypt", Razor, SignalR]
 uid: security/data-protection/implementation/subkeyderivation
 ---
 # Subkey derivation and authenticated encryption in ASP.NET Core
@@ -31,7 +32,7 @@ Because the AAD is unique for the tuple of all three components, we can use it t
 
 ( K_E, K_H ) = SP800_108_CTR_HMACSHA512(K_M, AAD, contextHeader || keyModifier)
 
-Here, we're calling the NIST SP800-108 KDF in Counter Mode (see [NIST SP800-108](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-108.pdf), Sec. 5.1) with the following parameters:
+Here, we're calling the NIST SP800-108 KDF in Counter Mode (see [NIST SP800-108](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-108.pdf), Sec. 5.1) with the following parameters:
 
 * Key derivation key (KDK) = K_M
 

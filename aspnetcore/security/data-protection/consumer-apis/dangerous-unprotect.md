@@ -5,11 +5,11 @@ description: Learn how to unprotect data, protected with keys that have since be
 ms.author: riande
 ms.custom: mvc
 ms.date: 10/24/2018
+no-loc: [Blazor, "Identity", "Let's Encrypt", Razor, SignalR]
 uid: security/data-protection/consumer-apis/dangerous-unprotect
 ---
 
 # Unprotect payloads whose keys have been revoked in ASP.NET Core
-
 
 <a name="data-protection-consumer-apis-dangerous-unprotect"></a>
 
